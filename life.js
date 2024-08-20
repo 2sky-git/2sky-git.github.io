@@ -17,7 +17,7 @@ const list = [
   { id: 221, name: '毛泽东思想？', parentId: 22 },
   { id: 222, name: '悉达多？', parentId: 22 },
   { id: 23, name: '改变世界', parentId: 2 },
-  { id: 3, name: 'Root 2', parentId: 0 },
+  { id: 3, name: 'Root 2', parentId: 0 }
 ];
 
 function buildTree(list) {
