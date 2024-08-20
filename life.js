@@ -7,6 +7,7 @@ const list = [
   { id: 21, name: '冥想&内观', parentId: 2},
   { id: 22, name: '十日禅', parentId: 2},
   { id: 23, name: '领会般若智', parentId: 2},
+  
   { id: 3, name: '认知世界的思维框架', parentId: 1 },
   { id: 31, name: '大量读书', parentId: 3 },
   { id: 311, name: '怎么读？', parentId: 31 },
@@ -17,7 +18,36 @@ const list = [
   { id: 321, name: '毛泽东思想？', parentId: 32 },
   { id: 322, name: '悉达多？', parentId: 32 },
   { id: 33, name: '改变世界', parentId: 3 },
-  { id: 4, name: 'Root 2', parentId: 1 }
+  
+  { id: 4, name: '财富自由', parentId: 1 },
+  { id: 41, name: '理解经济运行', parentId: 4 },
+  { id: 411, name: '置身事内', parentId: 41 },
+  { id: 412, name: 'kkndme', parentId: 41 },
+  { id: 42, name: '家庭理财', parentId: 4 },
+  { id: 43, name: '构建闭环的赚钱系统', parentId: 4 },
+
+  { id: 5, name: '健康长寿', parentId: 1 },
+  { id: 51, name: '流水不腐', parentId: 5 },
+  { id: 52, name: '充足的睡眠', parentId: 5 },
+  { id: 53, name: '健康的饮食', parentId: 5 },
+  { id: 54, name: '体检', parentId: 5 },
+
+  { id: 6, name: '仁：众生解脱', parentId: 1 },
+  { id: 61, name: '妻子', parentId: 6 },
+  { id: 62, name: '弟弟', parentId: 6 },
+  { id: 63, name: '父母', parentId: 6 },
+  { id: 64, name: '朋友', parentId: 6 },
+  { id: 65, name: '众生', parentId: 6 },
+
+  { id: 7, name: '自我实现', parentId: 1 },
+  { id: 71, name: '脑机接口', parentId: 7 },
+  { id: 72, name: '贡献精神世界的价值', parentId: 7 },
+  { id: 73, name: '自由的世界公民', parentId: 7 },
+
+  { id: 8, name: '舒适的环境', parentId: 1 },
+  { id: 81, name: '拥抱自然', parentId: 8 },
+  { id: 82, name: '环球旅行', parentId: 8 },
+  { id: 83, name: '个人读书角', parentId: 8 }
 ];
 
 function buildTree(list) {
