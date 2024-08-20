@@ -1,126 +1,41 @@
 var chartDom = document.getElementById('life');
 var myChart = echarts.init(chartDom);
 var option;
+const list = [
+  { id: 1, name: 'Root 1', parentId: null },
+  { id: 2, name: 'Child 1-1', parentId: 1 },
+  { id: 3, name: 'Child 1-2', parentId: 1 },
+  { id: 4, name: 'Root 2', parentId: null },
+];
 
-var data=[
-  {
-    "id": 1,
-    "name": "Root 1",
-    "parentId": null,
-    "children": [
-      {
-        "id": 2,
-        "name": "Child 1-1",
-        "parentId": 1,
-        "children": [],
-        "value": 0
-      },
-      {
-        "id": 3,
-        "name": "Child 1-2",
-        "parentId": 1,
-        "children": [],
-        "value": 0
-      }
-    ],
-    "value": 2
-  },
-  {
-    "id": 4,
-    "name": "Root 2",
-    "parentId": null,
-    "children": [],
-    "value": 0
+function buildTree(list) {
+  const nodeMap = {}; 
+  const tree = [];
+
+  list.forEach(node => {
+    nodeMap[node.id] = { ...node, children: [] }; 
+  });
+
+  // 构建树和计算子节点个数
+  list.forEach(node => {
+    if (node.parentId) {
+      nodeMap[node.parentId].children.push(nodeMap[node.id]);
+    } else {
+      tree.push(nodeMap[node.id]);
+    }
+  });
+
+  function countChildren(node) {
+    node.value = node.children.length+1;
+    node.children.forEach(countChildren);
   }
-];
-var data1 = [
-  {
-    name: 'life',
-    /* 过好这一生：活得长、活得好；自由 */
-    children: [
-      {
-        name: '纯净&安详的生命状态',
-        value: 10,
-        children: [
-          {
-            name: '内观',
-            value: 3,
-            children: [
-              {
-                name: '冥想练习',
-                value: 1
-              },
-              {
-                name: '十日禅',
-                value: 1
-              },
-              {
-                name: '般若智',
-                value: 1
-              }
-            ]
-          }
-        ]
-      },
-      {
-        name: '构建认知世界的思维框架',
-        value: 10,
-        children: [
-          {
-            name: '大量读书',
-            value: 4,
-            children: [
-              {
-                name: '怎么读？',
-                value: 1
-              },
-              {
-                name: '读什么？',
-                value: 1
-              },
-              {
-                name: '正在读',
-                value: 1
-              },
-              {
-                name: '读了什么',
-                value: 1
-              }
-            ]
-          },
-           {
-            name: '构建思维框架',
-            value: 3,
-            children: [
-              {
-                name: '毛泽东思想？',
-                value: 1
-              },
-              {
-                name: '悉达多？',
-                value: 1
-              }
-            ]
-          },
-           {
-            name: '改变世界',
-            value: 3,
-            children: [
-              {
-                name: '做自我',
-                value: 1
-              },
-              {
-                name: '实现自我',
-                value: 1
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-];
+
+  tree.forEach(countChildren);
+  return tree;
+}
+
+var data = buildTree(list);
+
 option = {
   visualMap: {
     type: 'continuous',
