@@ -5,7 +5,7 @@ var option;
 var data = [
   {
     name: 'life',
-    // 过好这一生：活得长、活得好；自由
+    /* 过好这一生：活得长、活得好；自由 */
     children: [
       {
         name: '纯净&安详的生命状态',
@@ -25,6 +25,62 @@ var data = [
               },
               {
                 name: '般若智',
+                value: 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: '构建认知世界的思维框架',
+        value: 10,
+        children: [
+          {
+            name: '大量读书',
+            value: 4,
+            children: [
+              {
+                name: '怎么读？',
+                value: 1
+              },
+              {
+                name: '读什么？',
+                value: 1
+              },
+              {
+                name: '正在读',
+                value: 1
+              },
+              {
+                name: '读了什么',
+                value: 1
+              }
+            ]
+          },
+           {
+            name: '构建思维框架',
+            value: 3,
+            children: [
+              {
+                name: '毛泽东思想？',
+                value: 1
+              },
+              {
+                name: '悉达多？',
+                value: 1
+              }
+            ]
+          },
+           {
+            name: '改变世界',
+            value: 3,
+            children: [
+              {
+                name: '做自我',
+                value: 1
+              },
+              {
+                name: '实现自我',
                 value: 1
               }
             ]
