@@ -2,7 +2,38 @@ var chartDom = document.getElementById('life');
 var myChart = echarts.init(chartDom);
 var option;
 
-var data = [
+var data=[
+  {
+    "id": 1,
+    "name": "Root 1",
+    "parentId": null,
+    "children": [
+      {
+        "id": 2,
+        "name": "Child 1-1",
+        "parentId": 1,
+        "children": [],
+        "value": 0
+      },
+      {
+        "id": 3,
+        "name": "Child 1-2",
+        "parentId": 1,
+        "children": [],
+        "value": 0
+      }
+    ],
+    "value": 2
+  },
+  {
+    "id": 4,
+    "name": "Root 2",
+    "parentId": null,
+    "children": [],
+    "value": 0
+  }
+];
+var data1 = [
   {
     name: 'life',
     /* 过好这一生：活得长、活得好；自由 */
