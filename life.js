@@ -17,7 +17,10 @@ const list = [
     { id: 32, name: '构建思维框架', parentId: 3 },
       { id: 321, name: '毛泽东思想？', parentId: 32 },
       { id: 322, name: '多元思维', parentId: 32 },
-        { id: 3221, name: '利益思维', parentId: 322 },
+        { id: 3221, name: '利益驱动思维决策链', parentId: 322 },
+        { id: 3222, name: '精英掌控话语权，底层被剥削', parentId: 322 },
+        { id: 3223, name: '丛林法则', parentId: 322 },
+        { id: 3223, name: '趋利避害', parentId: 322 },
     { id: 33, name: '改变世界', parentId: 3 },
   
   { id: 4, name: '财富自由', parentId: 1 },
@@ -47,6 +50,7 @@ const list = [
       { id: 731, name: '环球旅行', parentId: 73 },
       { id: 731, name: 'run？', parentId: 73 },
     { id: 74, name: '人生只有一次，要达到什么成就？', parentId: 7 },
+      { id: 741, name: '成为社会精英', parentId: 74 },
 
   { id: 8, name: '舒适的环境', parentId: 1 },
     { id: 81, name: '拥抱自然', parentId: 8 },
