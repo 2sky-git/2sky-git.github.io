@@ -107,7 +107,7 @@ option = {
     radius: [0, '90%'],
     label: {
       fontSize: 12,
-      rotate: 45
+      rotate: 'radial'
     }
   }
 };
