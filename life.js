@@ -106,7 +106,8 @@ option = {
     data: data,
     radius: [0, '90%'],
     label: {
-      rotate: 'radial'
+      fontSize: 12,
+      rotate: 45
     }
   }
 };
