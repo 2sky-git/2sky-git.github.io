@@ -16,7 +16,8 @@ const list = [
       { id: 314, name: '已读', parentId: 31 },
     { id: 32, name: '构建思维框架', parentId: 3 },
       { id: 321, name: '毛泽东思想？', parentId: 32 },
-      { id: 322, name: '悉达多？', parentId: 32 },
+      { id: 322, name: '多元思维', parentId: 32 },
+        { id: 3221, name: '利益思维', parentId: 322 },
     { id: 33, name: '改变世界', parentId: 3 },
   
   { id: 4, name: '财富自由', parentId: 1 },
@@ -32,7 +33,7 @@ const list = [
     { id: 53, name: '健康的饮食', parentId: 5 },
     { id: 54, name: '体检', parentId: 5 },
 
-  { id: 6, name: '仁：众生解脱', parentId: 1 },
+  { id: 6, name: '仁：普度众生', parentId: 1 },
     { id: 61, name: '妻子', parentId: 6 },
     { id: 62, name: '弟弟', parentId: 6 },
     { id: 63, name: '父母', parentId: 6 },
