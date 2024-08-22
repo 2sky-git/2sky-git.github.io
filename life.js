@@ -22,7 +22,7 @@ const list = [
         { id: 3221, name: '利益驱动思维决策链', parentId: 322 },
         { id: 3222, name: '精英掌控话语权，底层被剥削', parentId: 322 },
         { id: 3223, name: '丛林法则', parentId: 322 },
-        { id: 3223, name: '趋利避害', parentId: 322 },
+        { id: 3224, name: '趋利避害', parentId: 322 },
     { id: 33, name: '自我实现，改变世界', parentId: 3 },
 
   { id: 7, name: '自我实现', parentId: 1 },
@@ -30,8 +30,8 @@ const list = [
     { id: 72, name: '贡献精神世界的价值', parentId: 7 },
     { id: 73, name: '自由的世界公民', parentId: 7 },
       { id: 731, name: '环球旅行', parentId: 73 },
-      { id: 731, name: 'run？', parentId: 73 },
-    { id: 74, name: '人生只有一次，要达到什么成就？', parentId: 7 },
+      { id: 732, name: 'run？', parentId: 73 },
+    { id: 74, name: '一次性人生的成就', parentId: 7 },
       { id: 741, name: '成为社会精英', parentId: 74 },
 
   
