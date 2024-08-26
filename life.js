@@ -32,6 +32,7 @@ const list = [
         { id: 3224, name: '人性的趋利避害', parentId: 322 },
         { id: 3225, name: '5W1H黄金圈法则的认识论', parentId: 322 },
         { id: 3226, name: '研究问题的认识论', parentId: 322 },
+    { id: 34, name: '英语能力', parentId: 3 },
     { id: 33, name: '自我实现，改变世界', parentId: 3 },
 
   { id: 7, name: '自我实现', parentId: 1 },
